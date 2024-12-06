@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Palindrome?</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  -->
+      <header class="header">
+        <h1 class="title uppercase">palindrome checker</h1>
+        <p class="description">
+          A palindrome is a word or phrase that can be read the
+          <span class="bold">same way forwards and backwards</span>, ignoring punctuation,
+          case, and spacing.
+        </p>
+        <p class="description">
+          Enter a word down below to check, if the word is a palindrome.
+        </p>
+      </header>
+      <!--  -->
+      <main>
+        <form id="form" class="form">
+          <input
+            type="text"
+            id="text-input"
+            placeholder="Enter a word or phrase..."
+            class="shadow"
+          />
+          <button id="check-btn" class="shadow bold uppercase" type="submit">
+            Check
+          </button>
+        </form>
+        <!--  -->
+        <p id="result" class="hidden description"></p>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
